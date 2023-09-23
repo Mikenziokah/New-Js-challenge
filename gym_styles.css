@@ -41,7 +41,7 @@ section {
     background-color: #f8a632;
     color: #333;
     text-align: center;
-    background-image: url('pics/background1.jpg');
+    background-image: url(url('file:///Users/pro/Desktop/gorilla/gorilla-gym/pics/hero_background.jpg');
 }
 
 #hero .cta-button {
