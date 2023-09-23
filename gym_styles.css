@@ -41,7 +41,7 @@ section {
     background-color: #f8a632;
     color: #333;
     text-align: center;
-    background-image: url('pics/hero_background.jpg');
+    background-image: url('pics/background1.jpg');
 }
 
 #hero .cta-button {
@@ -60,12 +60,12 @@ section {
 
 #about {
     background-color: #eee;
-    background-image: url('pics/about_background.jpg');
+    background-image: url('pics/about_background2.jpg');
 }
 
 #services {
     background-color: #f0f0f0;
-    background-image: url('pics/services_background.jpg');
+    background-image: url('pics/services_background3.jpg');
 }
 
 #services ul {
@@ -80,7 +80,7 @@ section {
 #contact {
     background-color: #f8a632;
     text-align: center;
-    background-image: url('pics/contact_background.jpg');
+    background-image: url('pics/contact_background1.jpg');
 }
 
 #contact .cta-button {
@@ -100,7 +100,7 @@ section {
 #booking {
     background-color: #c3e6af;
     text-align: center;
-    background-image: url('pics/booking_background.jpg');
+    background-image: url('pics/booking_background2.jpg');
 }
 
 #booking .cta-button {
@@ -121,7 +121,7 @@ section {
     background-color: #f0f0f0;
     text-align: center;
     padding: 20px;
-    background-image: url('pics/pricing_background.jpg');
+    background-image: url('pics/pricing_background2.jpg');
 }
 
 footer {
