@@ -6,6 +6,8 @@ body, h1, h2, p, ul {
 
 body {
     font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -39,6 +41,7 @@ section {
     background-color: #f8a632;
     color: #333;
     text-align: center;
+    background-image: url('pics/hero_background.jpg');
 }
 
 #hero .cta-button {
@@ -57,10 +60,12 @@ section {
 
 #about {
     background-color: #eee;
+    background-image: url('pics/about_background.jpg');
 }
 
 #services {
     background-color: #f0f0f0;
+    background-image: url('pics/services_background.jpg');
 }
 
 #services ul {
@@ -75,6 +80,7 @@ section {
 #contact {
     background-color: #f8a632;
     text-align: center;
+    background-image: url('pics/contact_background.jpg');
 }
 
 #contact .cta-button {
@@ -94,6 +100,7 @@ section {
 #booking {
     background-color: #c3e6af;
     text-align: center;
+    background-image: url('pics/booking_background.jpg');
 }
 
 #booking .cta-button {
@@ -114,6 +121,7 @@ section {
     background-color: #f0f0f0;
     text-align: center;
     padding: 20px;
+    background-image: url('pics/pricing_background.jpg');
 }
 
 footer {
@@ -125,6 +133,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* Additional styles can be added as needed */
 
