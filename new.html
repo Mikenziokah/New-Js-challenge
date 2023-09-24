@@ -47,7 +47,12 @@
   <footer>
     <p>&copy; 2023 Gorilla Gym. All rights reserved.</p>
   </footer>
-<script src="script.js"></script>
+
+<script>
+    function toggleContact() {
+      const contactSection = document.getElementById('contact');
+      contactSection.style.display = (contactSection.style.display === 'none' || contactSection.style.display === '') ? 'block' : 'none';
+    }
+  </script>
 </body>
 </html>
-
