@@ -1,7 +1,8 @@
-body {
+ibody {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
 }
 
 header {
@@ -33,7 +34,40 @@ main {
   padding: 20px;
 }
 
+#landing {
+  background-image: url('gym_equipment.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
+
+#landing h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#landing p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#landing button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#landing button:hover {
+  background-color: #555;
+}
+
 section {
+  background-color: white;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -45,8 +79,5 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-}
-#contact.visible {
-  display: block;
 }
 

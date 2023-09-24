@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Gorilla Gym</title>
 </head>
 <body>
@@ -14,13 +14,18 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
-        <li><a href="#">Classes</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="toggleContact()">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <section id="landing">
+      <h2>Your Path to Fitness</h2>
+      <p>Explore our state-of-the-art gym equipment and classes to achieve your fitness goals.</p>
+      <button onclick="scrollToAbout()">Discover More</button>
+    </section>
+
     <section id="about">
       <h2>About Us</h2>
       <p>Welcome to Gorilla Gym, where fitness meets adventure! We offer a wide range of classes and training programs to help you achieve your fitness goals in a fun and challenging environment.</p>
@@ -32,15 +37,15 @@
       <ul>
         <li>Strength Training</li>
         <li>Cardio Workouts</li>
-        <li>Kick boxing and martial arts</li>
+        <li>Yoga and Meditation</li>
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" style="display:none;">
       <h2>Contact Us</h2>
       <p>If you have any questions or inquiries, feel free to reach out to us.</p>
-      <p>Email: info@gorillagym.co.ke</p>
-      <p>Phone: +254 742 334 203</p>
+      <p>Email: info@gorillagym.com</p>
+      <p>Phone: 123-456-7890</p>
     </section>
   </main>
 
@@ -48,11 +53,17 @@
     <p>&copy; 2023 Gorilla Gym. All rights reserved.</p>
   </footer>
 
-<script>
+  <script>
     function toggleContact() {
       const contactSection = document.getElementById('contact');
       contactSection.style.display = (contactSection.style.display === 'none' || contactSection.style.display === '') ? 'block' : 'none';
     }
+
+    function scrollToAbout() {
+      const aboutSection = document.getElementById('about');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
   </script>
 </body>
 </html>
+
