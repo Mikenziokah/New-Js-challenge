@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="now.css">
   <title>Gorilla Gym</title>
 </head>
 <body>
@@ -15,6 +15,8 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#" onclick="toggleContact()">Contact</a></li>
+        <li><a href="#" onclick="toggleBooking()">Book a Session</a></li>
+        <li><a href="#" onclick="toggleTrainerChart()">Trainer Chart</a></li>
       </ul>
     </nav>
   </header>
@@ -41,11 +43,30 @@
       </ul>
     </section>
 
-    <section id="contact" style="display:none;">
-      <h2>Contact Us</h2>
-      <p>If you have any questions or inquiries, feel free to reach out to us.</p>
-      <p>Email: info@gorillagym.com</p>
-      <p>Phone: 123-456-7890</p>
+    <section id="booking" style="display:none;">
+      <h2>Book a Session</h2>
+      <p>Contact us to book a session with one of our experienced trainers. We'll help you achieve your fitness goals!</p>
+      <p>Email: booking@gorillagym.com</p>
+      <p>Phone: 987-654-3210</p>
+    </section>
+
+    <section id="trainer-chart" style="display:none;">
+      <h2>Trainer Chart</h2>
+      <p>Check out our trainer chart to learn more about our experienced trainers and their expertise.</p>
+      <ul>
+        <li>
+          <h3>John Doe</h3>
+          <p>Specializes in Strength Training and Bodybuilding.</p>
+        </li>
+        <li>
+          <h3>Alice Smith</h3>
+          <p>Expert in Cardio Workouts and CrossFit.</p>
+        </li>
+        <li>
+          <h3>Michael Johnson</h3>
+          <p>Yoga and Meditation Guru.</p>
+        </li>
+      </ul>
     </section>
   </main>
 
@@ -57,6 +78,16 @@
     function toggleContact() {
       const contactSection = document.getElementById('contact');
       contactSection.style.display = (contactSection.style.display === 'none' || contactSection.style.display === '') ? 'block' : 'none';
+    }
+
+    function toggleBooking() {
+      const bookingSection = document.getElementById('booking');
+      bookingSection.style.display = (bookingSection.style.display === 'none' || bookingSection.style.display === '') ? 'block' : 'none';
+    }
+
+    function toggleTrainerChart() {
+      const trainerChartSection = document.getElementById('trainer-chart');
+      trainerChartSection.style.display = (trainerChartSection.style.display === 'none' || trainerChartSection.style.display === '') ? 'block' : 'none';
     }
 
     function scrollToAbout() {
