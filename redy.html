@@ -39,15 +39,20 @@
       <ul>
         <li>Strength Training</li>
         <li>Cardio Workouts</li>
-        <li>kick boxing and martial arts</li>
+        <li>Yoga and Meditation</li>
       </ul>
     </section>
 
     <section id="booking" style="display:none;">
       <h2>Book a Session</h2>
       <p>Contact us to book a session with one of our experienced trainers. We'll help you achieve your fitness goals!</p>
-      <p>Email: booking@gorillagym.co.ke</p>
-      <p>Phone: +2547423342--</p>
+      <form id="bookingForm" onsubmit="submitBookingForm(event)">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
     </section>
 
     <section id="trainer-chart" style="display:none;">
@@ -55,16 +60,16 @@
       <p>Check out our trainer chart to learn more about our experienced trainers and their expertise.</p>
       <ul>
         <li>
-          <h3>Shawn Sadik</h3>
+          <h3>John Doe</h3>
           <p>Specializes in Strength Training and Bodybuilding.</p>
         </li>
         <li>
-          <h3>Dennis aka Denno</h3>
+          <h3>Alice Smith</h3>
           <p>Expert in Cardio Workouts and CrossFit.</p>
         </li>
         <li>
-          <h3>Scooby Scooby</h3>
-          <p>Boxing and Martial Guru.</p>
+          <h3>Michael Johnson</h3>
+          <p>Yoga and Meditation Guru.</p>
         </li>
       </ul>
     </section>
@@ -93,6 +98,21 @@
     function scrollToAbout() {
       const aboutSection = document.getElementById('about');
       aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function submitBookingForm(event) {
+      event.preventDefault();  // Prevents the default form submission behavior
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+
+      // You can handle the form submission here, for example, send the data to your server
+      console.log('Booking request submitted:');
+      console.log('Name:', name);
+      console.log('Email:', email);
+
+      // Optionally, you can display a thank you message or redirect to a thank you page
+      alert('Thank you for your booking request! We will get in touch with you soon.');
     }
   </script>
 </body>
